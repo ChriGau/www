@@ -76,13 +76,20 @@
 
         main {
           position: relative;
+          height: 100%;
           z-index: 10;
         }
 
         .story-card-title {
-            color: white;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-          }
+          color: white;
+          text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .story-card-footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+        }
 
         &:nth-child(odd) {
           width: 34%;
@@ -91,7 +98,7 @@
 
           .story-card-title {
             color: white;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
           }
         }
 
@@ -110,6 +117,16 @@
             left: 0;
             background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.2) 45%);
             z-index: 0;
+          }
+
+          .story-card-title {
+            width: 50%;
+          }
+
+          .story-card-summary {
+            width: 50%;
+            color: white;
+            opacity: 1;
           }
         }
       }
