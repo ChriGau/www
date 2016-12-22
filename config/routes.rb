@@ -71,6 +71,7 @@ Rails.application.routes.draw do
     get "employers", to: "pages#employers", template: "employers", as: :employers
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
+    get "projects" => "projects#index", as: :projects
     get "blog", to: 'posts#index', as: :blog
     get "blog/:slug", to: 'posts#show', as: :post
     get "live", to: 'pages#live', as: :live
