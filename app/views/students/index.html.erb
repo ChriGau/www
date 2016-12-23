@@ -17,7 +17,7 @@
               <%= story["title"][locale.to_s] || story["title"]["en"]  %>
             </div>
             <div class="story-card-summary">
-              <%= markdown(story['summary'][locale.to_s] || story['summary']['en']) %>
+              <%= truncate(markdown(story['summary'][locale.to_s] || story['summary']['en']), length: 160, escape: false) %>
             </div>
             <div class='story-card-footer'>
               <%= render 'stories/user_infos', story: story %>
@@ -31,5 +31,5 @@
 </div>
 
 
-<%= render partial: "shared/testimonials", locals: {number: 20} %>
+<%= render partial: "shared/testimonials_new", locals: {number: 20} %>
 

@@ -25,12 +25,19 @@
     z-index: 0;
   }
 
+  h1 {
+    position: relative;
+    margin: 25px auto 260px;
+    max-width: 620px;
+    text-align: center;
+    z-index: 10;
+  }
+
   .stories-container {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     padding: 0;
-    margin-top: 390px;
     min-height: 300px;
     background-color: white;
     border-radius: 8px;
@@ -47,6 +54,10 @@
         .story-container {
           &:nth-child(odd) {
             background-color: #FFE262;
+
+            &:hover {
+              background-color: #ffe262;
+            }
           }
         }
       }
@@ -85,20 +96,44 @@
           text-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
 
+        .story-card-summary {
+          opacity: 0;
+          transition: all 0.1s ease;
+        }
+
         .story-card-footer {
           position: absolute;
           bottom: 0;
           width: 100%;
+          font-size: 14px;
+
+          .story-company-logo {
+            width: 65px;
+            border-radius: 50%;
+          }
+        }
+
+        .story-card-link {
+          z-index: 15;
         }
 
         &:nth-child(odd) {
           width: 34%;
           background-image: none !important;
           background-color: #00FBC0;
+          transition: all 0.1s ease;
 
           .story-card-title {
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+          }
+
+          &:hover {
+            background-color: #00f6bc;
+
+            .story-card-summary {
+              opacity: 0.8;
+            }
           }
         }
 
@@ -119,6 +154,16 @@
             z-index: 0;
           }
 
+          &:hover {
+            &:after {
+              background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.2) 45%);
+            }
+
+            .story-card-summary {
+              opacity: 0.8;
+            }
+          }
+
           .story-card-title {
             width: 50%;
           }
@@ -126,7 +171,11 @@
           .story-card-summary {
             width: 50%;
             color: white;
-            opacity: 1;
+            transition: all 0.3s ease;
+          }
+
+          .story-card-footer {
+            color: white;
           }
         }
       }

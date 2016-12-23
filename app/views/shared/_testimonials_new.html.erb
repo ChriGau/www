@@ -1,0 +1,81 @@
+<% cache [ 'testimonials', locale ] do %>
+
+
+<div class="testimonials-services">
+  <a href="https://www.switchup.org/bootcamps/le-wagon" target="_blank">
+    <%= image_tag "switchup_badge.png" %>
+  </a>
+  <a href="https://www.quora.com/What-is-your-review-of-Le-Wagon" target="_blank">
+    <%= image_tag "quora.png" %>
+  </a>
+   <a href="https://www.coursereport.com/schools/le-wagon#/reviews" target="_blank">
+    <%= image_tag "course_report.png" %>
+  </a>
+</div>
+
+<%# Cache strategy: do not randomize testimonials at each page load %>
+<% testimonials = @client.testimonials(locale.to_s).shuffle %>
+  <div class="container-fluid testimonials-wrapper">
+
+    <%= image_tag 'quotes.svg', class: 'quotes-icon' %>
+    <div class="container testimonials-container">
+      <% testimonials.each do |testimonial| %>
+        <% cache [ 'testimonial', locale, testimonial['id'] ] do %>
+          <div class="testimonial-card">
+            <div class="testimonial-body">
+              <%= cl_adaptive_image_tag testimonial['user']['photo_path'], class: 'alumni-picture', width: 230, height: 230, crop: :fill %>
+              <div class='testimonial-content'>
+                <%= testimonial['content'] %>
+              </div>
+              <div class="testimonial-user-name">
+                <%= testimonial['user']['first_name'] %>  <%= testimonial['user']['last_name'] %>
+              </div>
+              <div class='testimonial-user-batch'>
+                Batch #<%= testimonial['user']['batch']['slug'] %>, <%= testimonial['user']['batch']['city']['name'] %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<% content_for :after_js do %>
+  <script>
+    $(document).ready(function() {
+      // Configure/customize these variables.
+      var showChar = 130;  // How many characters are shown by default
+      var ellipsestext = "...";
+      var moretext = "Show more";
+      var lesstext = "Show less";
+
+
+      $('.testimonial-content').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+          var c = content.substr(0, showChar);
+          var h = content.substr(showChar, content.length - showChar);
+
+          var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+          $(this).html(html);
+        }
+      });
+
+      $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+      });
+    });
+  </script>
+<% end %>

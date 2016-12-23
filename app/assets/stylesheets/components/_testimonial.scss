@@ -127,3 +127,83 @@
     filter: grayscale(0%);
   }
 }
+
+/******************************************************************************/
+/* TESTIMONIALS - NEW */
+/******************************************************************************/
+
+.testimonials-services {
+  display: flex;
+  justify-content: space-around;
+  margin: 90px auto;
+  width: 100%;
+  max-width: 920px;
+
+  img {
+    height: 90px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.testimonials-wrapper {
+  background-color: #DF694E;
+
+  .quotes-icon {
+    position: relative;
+    margin: 55px 0 85px 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .testimonial-card {
+      position: relative;
+      padding: 0 40px;
+      width: 50%;
+
+      .testimonial-body {
+        position: relative;
+        padding-left: 85px;
+        margin-bottom: 30px;
+        min-height: 185px;
+        background-color: white;
+        border-radius: 8px;
+
+        .alumni-picture {
+          position: absolute;
+          width: 115px;
+          height: 115px;
+          top: 50%;
+          left: -57px;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          border: 3px solid white;
+          box-shadow: 0 2px 26px 0 rgba(0,0,0,0.2);
+          z-index: 15;
+        }
+
+        .testimonial-content {
+          .morecontent span {
+              display: none;
+          }
+          .morelink {
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+
+        .testimonial-user-name {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
