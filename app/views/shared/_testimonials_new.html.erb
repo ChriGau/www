@@ -27,11 +27,13 @@
               <div class='testimonial-content'>
                 <%= testimonial['content'] %>
               </div>
-              <div class="testimonial-user-name">
-                <%= testimonial['user']['first_name'] %>  <%= testimonial['user']['last_name'] %>
-              </div>
-              <div class='testimonial-user-batch'>
-                Batch #<%= testimonial['user']['batch']['slug'] %>, <%= testimonial['user']['batch']['city']['name'] %>
+              <div class="testimonial-author">
+                <div class="testimonial-user-name">
+                  <%= testimonial['user']['first_name'] %>  <%= testimonial['user']['last_name'] %>
+                </div>
+                <div class='testimonial-user-batch'>
+                  Batch #<%= testimonial['user']['batch']['slug'] %>, <%= testimonial['user']['batch']['city']['name'] %>
+                </div>
               </div>
             </div>
           </div>

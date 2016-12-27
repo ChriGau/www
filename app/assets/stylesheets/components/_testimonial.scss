@@ -135,8 +135,10 @@
 .testimonials-services {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 90px auto;
   width: 100%;
+  min-height: 150px;
   max-width: 920px;
 
   img {
@@ -150,8 +152,14 @@
   }
 }
 
+.students-index {
+  .testimonials-wrapper {
+    background-color: #DF694E;
+  }
+}
+
+
 .testimonials-wrapper {
-  background-color: #DF694E;
 
   .quotes-icon {
     position: relative;
@@ -200,8 +208,10 @@
           }
         }
 
-        .testimonial-user-name {
-          margin-top: 15px;
+        .testimonial-author {
+          .testimonial-user-name {
+            margin-top: 15px;
+          }
         }
       }
     }
