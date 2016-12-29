@@ -134,6 +134,19 @@
             .story-card-summary {
               opacity: 0.8;
             }
+
+            .story-company-logo {
+              animation-name: pulsate;
+              animation-duration: 4s;
+              animation-timing-function: ease-in-out;
+              animation-iteration-count: infinite
+            }
+
+            @-webkit-keyframes pulsate {
+              0% { transform: scale(1); opacity: 0.4;}
+              35% { transform: scale(1.1); opacity: 1;}
+              100% { transform: scale(1); opacity: 0.4;}
+            }
           }
         }
 
@@ -161,6 +174,19 @@
 
             .story-card-summary {
               opacity: 0.8;
+            }
+
+            .story-company-logo {
+              animation-name: pulsate;
+              animation-duration: 2s;
+              animation-timing-function: ease-in-out;
+              animation-iteration-count: infinite
+            }
+
+            @-webkit-keyframes pulsate {
+              0% { transform: scale(1); opacity: 0.4;}
+              35% { transform: scale(1.1); opacity: 1;}
+              100% { transform: scale(1); opacity: 0.4;}
             }
           }
 

@@ -2,7 +2,7 @@
 
 
 <div class="testimonials-services">
-  <h2><i>300+ <%= @reviews_counter %></i> love messages on the web</h2>
+  <h2><i><%= @reviews %></i> love messages on the web</h2>
   <div class="services-logos">
     <a href="https://www.switchup.org/bootcamps/le-wagon" target="_blank">
       <%= image_tag "switchup_badge.png" %>
@@ -17,12 +17,11 @@
 </div>
 
 <%# Cache strategy: do not randomize testimonials at each page load %>
-<% testimonials = @client.testimonials(locale.to_s).shuffle %>
-  <div class="container-fluid testimonials-wrapper">
-
+<% @testimonials = @testimonials.shuffle %>
+  <div id="testimonials-wrapper" class="container-fluid testimonials-wrapper">
     <%= image_tag 'quotes.svg', class: 'quotes-icon' %>
     <div class="container testimonials-container">
-      <% testimonials.each do |testimonial| %>
+      <% @testimonials.each do |testimonial| %>
         <% cache [ 'testimonial', locale, testimonial['id'] ] do %>
           <div class="testimonial-card">
             <div class="testimonial-body">
@@ -42,6 +41,7 @@
           </div>
         <% end %>
       <% end %>
+
     </div>
   </div>
 <% end %>
