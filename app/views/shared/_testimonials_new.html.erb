@@ -2,15 +2,18 @@
 
 
 <div class="testimonials-services">
-  <a href="https://www.switchup.org/bootcamps/le-wagon" target="_blank">
-    <%= image_tag "switchup_badge.png" %>
-  </a>
-  <a href="https://www.quora.com/What-is-your-review-of-Le-Wagon" target="_blank">
-    <%= image_tag "quora.png" %>
-  </a>
-   <a href="https://www.coursereport.com/schools/le-wagon#/reviews" target="_blank">
-    <%= image_tag "course_report.png" %>
-  </a>
+  <h2><i>300+ <%= @reviews_counter %></i> love messages on the web</h2>
+  <div class="services-logos">
+    <a href="https://www.switchup.org/bootcamps/le-wagon" target="_blank">
+      <%= image_tag "switchup_badge.png" %>
+    </a>
+    <a href="https://www.quora.com/What-is-your-review-of-Le-Wagon" target="_blank">
+      <%= image_tag "quora.png" %>
+    </a>
+     <a href="https://www.coursereport.com/schools/le-wagon#/reviews" target="_blank">
+      <%= image_tag "course_report.png" %>
+    </a>
+  </div>
 </div>
 
 <%# Cache strategy: do not randomize testimonials at each page load %>
@@ -25,7 +28,7 @@
             <div class="testimonial-body">
               <%= cl_adaptive_image_tag testimonial['user']['photo_path'], class: 'alumni-picture', width: 230, height: 230, crop: :fill %>
               <div class='testimonial-content'>
-                <%= testimonial['content'] %>
+                <%= testimonial['content'].capitalize %>
               </div>
               <div class="testimonial-author">
                 <div class="testimonial-user-name">

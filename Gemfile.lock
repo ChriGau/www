@@ -391,6 +391,7 @@ DEPENDENCIES
   lodash-rails
   meetup_client
   money-rails
+  nokogiri
   omniauth-github
   pg
   pry-byebug
