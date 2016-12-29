@@ -1,3 +1,7 @@
 // Stories
 $('#stories_container').append("<%= j render 'more_stories', stories: @stories %>");
 $('#paginator').html('<%= escape_javascript(link_to_next_page(@stories, :remote => true, id: 'load_more_stories')) %>');
+
+// Testimonials
+$('#testimonials-container').append("<%= j render 'shared/more_testimonials', testimonials: @testimonials %>");
+$('#paginator-testimonials').html('<%= escape_javascript(link_to_next_page(@testimonials, :remote => true, id: 'load_more_testimonials')) %>');
