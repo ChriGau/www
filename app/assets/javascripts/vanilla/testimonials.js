@@ -1,7 +1,7 @@
 function truncateTestimonials() {
-  var THRESHOLD = 40;  // How many characters are shown by default
+  var THRESHOLD = 120;  // How many characters are shown by default
   var ellipsis = "...";
-  var readMore = "Read more"; // TODO: i18n
+  var readMore = " Read more"; // TODO: i18n
   var lesstext = "Show less";
 
   $('.testimonial-content:not(.truncated)').each(function() {

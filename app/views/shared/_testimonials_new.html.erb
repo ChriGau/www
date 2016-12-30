@@ -2,7 +2,7 @@
 
 
 <div class="testimonials-services">
-  <h2><i><%= @reviews %></i> love messages on the web</h2>
+  <h2><i><%= @reviews %></i> <%= t(".love_messages") %></h2>
   <div class="services-logos">
     <a href="https://www.switchup.org/bootcamps/le-wagon" target="_blank">
       <%= image_tag "switchup_badge.png" %>
@@ -24,7 +24,7 @@
       <%= render 'shared/more_testimonials', testimonials: @testimonials %>
     </div>
     <div id="paginator-testimonials">
-      <%= link_to_next_page @testimonials, 'Show more testimonials', param_name: :testimonial_page,  remote: true, id: 'load_more_testimonials', class: 'more-testimonials' %>
+      <%= link_to_next_page @testimonials,  t(".show_more_testimonials"), param_name: :testimonial_page,  remote: true, id: 'load_more_testimonials', class: 'more-testimonials' %>
     </div>
   </div>
 <% end %>

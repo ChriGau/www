@@ -208,7 +208,8 @@
     }
   }
 
-  #paginator {
+  #paginator,
+  #paginator-testimonials {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,6 +225,21 @@
       &:hover {
         text-decoration: none;
         color: #000;
+      }
+    }
+
+    .more-testimonials {
+      display: flex;
+      align-items: center;
+      height: 65px;
+      color: #fff;
+      font-weight: 600;
+      color: #9a3e21;
+
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+        opacity: 0.6;
       }
     }
   }

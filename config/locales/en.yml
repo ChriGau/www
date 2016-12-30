@@ -41,11 +41,13 @@ en:
     testimonials:
       what_our_students_say: Students Reviews
       students_think_of_us: What our students think of us
-      more_reviews: More reviews of Le Wagon
+      more_reviews: More reviews of Le Wagons
     testimonials_new:
       what_our_students_say: Students Reviews
       students_think_of_us: What our students think of us
       more_reviews: More reviews of Le Wagon
+      love_messages: love messages across the web
+      show_more_testimonials: Show more testimonials
     features:
       read_full_program: Read full program
       pedagogy_matters_html: "Code the startup way."
@@ -320,6 +322,7 @@ en:
       discover_us: Discover our program
       discover_our_stories: Discover our alumni stories
       watch_demo_day_title_html: "Watch our last Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
+      show_more_stories: Show more stories
   cities:
     show:
       title: "Coding Bootcamp in %{city} - Le Wagon - Learn to code in 9 weeks"

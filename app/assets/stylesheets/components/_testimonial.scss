@@ -145,7 +145,7 @@
   h2 {
     margin-bottom: 50px;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 41px;
     color: #a2a2a2;
 
     i {
@@ -228,12 +228,14 @@
         }
 
         .testimonial-content {
-          .morecontent span {
-              display: none;
-          }
-          .morelink {
+          .read-more {
             font-size: 14px;
             font-weight: 600;
+
+            &:hover {
+              text-decoration: none;
+              color: black;
+            }
           }
         }
 

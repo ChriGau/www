@@ -51,6 +51,8 @@ pt-BR:
       what_our_students_say: Reviews dos estudantes
       students_think_of_us: O que nossos estudantes pensam da gente
       more_reviews: Mais reviews do Le Wagon
+      love_messages: love messages across the web
+      show_more_testimonials: Show more testimonials
     features:
       read_full_program: Leia o programa completo
       pedagogy_matters_html: "Programe do jeito startup."
@@ -325,6 +327,7 @@ pt-BR:
       discover_us: Descubra nosso programa
       discover_our_stories: Descubra a historia de nossos alunos
       watch_demo_day_title_html: "Assista ao nosso último Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
+      show_more_stories: Show more stories
   cities:
     show:
       title: "Bootcamp de programação em %{city} - Le Wagon - Aprenda a codar em 9 semanas"
