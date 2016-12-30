@@ -1,7 +1,10 @@
-// Stories
-$('#stories_container').append("<%= j render 'more_stories', stories: @stories %>");
-$('#paginator').html('<%= escape_javascript(link_to_next_page(@stories, :remote => true, id: 'load_more_stories')) %>');
+<% if params[:story_page] %>
+  $('#stories_container').append("<%= j render 'more_stories', stories: @stories %>");
+  $('#paginator').html('<%= escape_javascript(link_to_next_page(@stories, :remote => true, :param_name => 'story_page', id: 'load_more_stories')) %>');
+<% end %>
 
-// Testimonials
-$('#testimonials-container').append("<%= j render 'shared/more_testimonials', testimonials: @testimonials %>");
-$('#paginator-testimonials').html('<%= escape_javascript(link_to_next_page(@testimonials, :remote => true, id: 'load_more_testimonials')) %>');
+<% if params[:testimonial_page] %>
+  $('#testimonials-container').append("<%= j render 'shared/more_testimonials', testimonials: @testimonials %>");
+  $('#paginator-testimonials').html('<%= escape_javascript(link_to_next_page(@testimonials, "Show more testimonials", :remote => true, :param_name => 'testimonial_page', id: 'load_more_testimonials')) %>');
+  truncateTestimonials();
+<% end %>
