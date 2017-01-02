@@ -1,47 +1,12 @@
-<div id="alumni">
+<h1>
+  <%= t(".projects_details_html", count: @client.projects("alumni_projects").length) %>
+</h1>
 
-    <h2 class='section-title-home section-title-home-small'>
-      <div class='section-title-home-content'>
-        <%= t(".our_students_projects", default: "Les projets de nos élèves") %>
-      </div>
-    </h2>
-
-
-    <div class="projects-list">
-      <% @projects.each do |project| %>
-        <% project = OpenStruct.new project %>
-        <div class="project-item-container">
-          <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
-          <div class="project-item">
-            <div class='project-item-head'>
-              <div class="project-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
-              </div>
-            </div>
-            <div class="project-item-infos">
-              <div class="project-item-infos-left">
-                <div class="project-item-name">
-                  <%= project.name %>
-                </div>
-                <div class="project-item-tagline">
-                  <%= project.tagline[I18n.locale.to_s] %>
-                </div>
-              </div>
-
-              <div class="project-item-makers">
-                <% project.makers.each do |maker| %>
-                  <% maker = OpenStruct.new maker %>
-                  <div class="project-item-maker">
-                    <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
-                      <%= cl_adaptive_image_tag maker.photo_path, width: 35, height: 35, crop: :fill, class: "avatar" %>
-                    </a>
-                  </div>
-                <% end %>
-              </div>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-
+<div class="container projects-container">
+  <div id="projects_container">
+    <%= render 'more_projects', projects: @projects %>
+  </div>
+  <div id="paginator_projects">
+    <%= link_to_next_page @projects, 'Show more projects', remote: true, param_name: :project_page,id: 'load_more_projects', class: 'more-projects' %>
   </div>
 </div>

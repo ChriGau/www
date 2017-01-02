@@ -382,6 +382,11 @@ fr:
       read_more: Découvrez d'autres témoignages d'élèves du Wagon
       title: "%{story}"
       description: "%{story}"
+  projects:
+    index:
+      projects_details_html: |
+        <strong>Découvrez plus de %{count}+ products</strong><small>réalisés par nos alumni en 10 jours</small>
+      show_more_projects: Voir plus de projets
   posts:
     index:
       title: Le Wagon Blog - Culture technique entrepreneuriale

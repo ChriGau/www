@@ -389,6 +389,11 @@ en:
       read_more: Read more testimonials from our bootcamp's students
       title: "%{story}"
       description: "%{story}"
+  projects:
+    index:
+      projects_details_html: |
+        <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
+      show_more_projects: Show more projects
   posts:
     index:
       title: Le Wagon - Technical Entrepreneurship Blog
