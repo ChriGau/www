@@ -3,7 +3,7 @@
     <% projects.each do |project| %>
       <% project = OpenStruct.new project %>
       <div class="project-card">
-        <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
+        <a class='project-url' target='_blank' href=<%= project.url %>>
           <div class="project-card-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
           </div>
         </a>
@@ -13,13 +13,13 @@
               <% maker = OpenStruct.new maker %>
               <div class="project-maker">
                 <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
-                  <%= cl_adaptive_image_tag maker.photo_path, width: 35, height: 35, crop: :fill, class: "avatar" %>
+                  <%= cl_adaptive_image_tag maker.photo_path, width: 80, height: 80, crop: :fill, class: "avatar" %>
                 </a>
               </div>
             <% end %>
           </div>
-          <%= project.name %>
-          <%= project.tagline[I18n.locale.to_s] %>
+          <h2><%= project.name %></h2>
+          <span><%= project.tagline[I18n.locale.to_s] %></span>
         </div>
       </div>
     <% end %>
