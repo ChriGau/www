@@ -1,0 +1,60 @@
+.pages-shop {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 850px;
+    top: 110px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: asset-url('banners/shop-banner.jpg');
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 100px auto 160px;
+    max-width: 620px;
+    text-align: center;
+    font-weight: 900;
+    z-index: 10;
+
+    small {
+      margin-top: 10px;
+    }
+  }
+
+  #myShop {
+    position: relative;
+    margin-bottom: 60px;
+    box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+
+    #sprd-main {
+      border-radius: 8px;
+
+      #footer {
+        padding-bottom: 0;
+        border-bottom: none;
+        color: white;
+        background-color: #222;
+
+        #return-policy-desktop-footer {
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
