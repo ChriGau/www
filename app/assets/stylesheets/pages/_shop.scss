@@ -44,7 +44,12 @@
     #sprd-main {
       border-radius: 8px;
 
+      .sprd-articles {
+        padding: 1em .5em 3em;
+      }
+
       #footer {
+        display: none;
         padding-bottom: 0;
         border-bottom: none;
         color: white;
