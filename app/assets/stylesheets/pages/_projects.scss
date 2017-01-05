@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    margin: 100px auto 160px;
     width: 100%;
     z-index: 10;
 
@@ -32,7 +33,6 @@
 
   .projects-container {
     position: relative;
-    padding-top: 110px;
     z-index: 10;
   }
 
@@ -70,11 +70,12 @@
             content: "";
             position: absolute;
             height: 100%;
-            width: 1px;
+            width: 6px;
             top: 0;
             bottom: 0;
             right: -20px;
-            background-color: rgba(0,0,0,0.1);
+            background-image: asset-url('misc/line.svg');
+            background-repeat: no-repeat;
           }
 
         }

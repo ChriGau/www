@@ -58,10 +58,17 @@
       margin-top: 0;
     }
 
+    .sprd-filterBar {
+      display: none;
+      position: relative;
+      top: 0;
+    }
+
     #sprd-main {
       border-radius: 8px;
 
       .sprd-articles {
+        top: 0;
         padding: 1em .5em 3em;
       }
 
