@@ -28,6 +28,11 @@
     font-weight: 900;
     z-index: 10;
 
+    @media (max-width: 420px) {
+      font-size: 34px;
+      margin-bottom: 60px;
+    }
+
     small {
       margin-top: 10px;
     }
@@ -41,11 +46,27 @@
     overflow: hidden;
     z-index: 10;
 
+    .sprd-minimalNavigation {
+      display: none;
+    }
+
+    .SprdHeader {
+      position: relative;
+    }
+
+    .sprd-navigationSpace {
+      margin-top: 0;
+    }
+
     #sprd-main {
       border-radius: 8px;
 
       .sprd-articles {
         padding: 1em .5em 3em;
+      }
+
+      .sprd-designDetails {
+        display: none;
       }
 
       #footer {

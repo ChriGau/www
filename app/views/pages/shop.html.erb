@@ -15,3 +15,12 @@
 </script>
 
 <script type="text/javascript" src="//shop.spreadshirt.fr/shopfiles/shopclient/shopclient.nocache.js"></script>
+
+<% content_for :after_js do %>
+  <script>
+    setTimeout(() => {
+      link = document.getElementById('startpageButton')
+      link.setAttribute("href", "<%= request.original_url %>")
+    }, 3000)
+  </script>
+<% end %>
