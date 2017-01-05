@@ -3,6 +3,7 @@
 //= require bootstrap-sprockets
 //= require jquery.slick
 //= require "headroom.js.js"
+//= require scrollreveal
 
 //= require react
 //= require react_ujs

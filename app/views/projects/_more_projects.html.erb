@@ -18,11 +18,15 @@
               </div>
             <% end %>
           </div>
-          <a class='project-url' target='_blank' href=<%= project.url %>>
+          <a target='_blank' href='<%= project.url %>'>
             <h2><%= project.name %></h2>
           </a>
           <span><%= project.tagline[I18n.locale.to_s] %></span>
-          <i><%= project.city["name"] %> - Batch #<%= project.batch %></i>
+          <i>
+            <% if project.city.present? %>
+              <%= project.city['name'] %> - Batch #<%= project.batch %>
+            <% end %>
+          </i>
         </div>
       </div>
     <% end %>

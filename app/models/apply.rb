@@ -20,8 +20,6 @@
 #
 
 class Apply < ActiveRecord::Base
-  MANDATORY_CODECADEMY_CITIES = %w(paris)
-
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :phone, presence: true
@@ -32,7 +30,9 @@ class Apply < ActiveRecord::Base
   attr_accessor :skip_source_validation
   validates :source, presence: { message: I18n.translate('applies.new.source_presence_message') }, unless: :skip_source_validation
 
+  before_validation :strip_codecademy_username
   attr_accessor :validate_ruby_codecademy_completed
+  validates :codecademy_username, presence: true, if: :validate_ruby_codecademy_completed
   validate :ruby_codecademy_completed, if: :validate_ruby_codecademy_completed
 
   attr_reader :linkedin_profile
@@ -81,6 +81,10 @@ class Apply < ActiveRecord::Base
   def fetch_linkedin_profile
     return if @linkedin_profile || linkedin.blank?
 
+    unless linkedin =~ /www\.linkedin\.com\/in/
+      fail Faraday::ResourceNotFound, nil
+    end
+
     require 'addressable/uri'
     uri = Addressable::URI.parse(linkedin)
     uri.query_values = nil
@@ -97,6 +101,8 @@ class Apply < ActiveRecord::Base
   private
 
   def ruby_codecademy_completed
+    return if codecademy_username.blank?
+
     client = CodecademyCheckerClient.new
     result = client.ruby_progress(codecademy_username)
     if result["error"]
@@ -108,5 +114,11 @@ class Apply < ActiveRecord::Base
 
   def linkedin_url_exists
     !linkedin_profile.nil?
+  end
+
+  def strip_codecademy_username
+    unless codecademy_username.blank?
+      self.codecademy_username = codecademy_username.gsub(/^.*\.com\//, "")
+    end
   end
 end

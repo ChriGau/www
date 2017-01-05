@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 ruby File.read(".ruby-version").strip
 
-gem "rails", "5.0.0.1"
+gem "rails", "5.0.1"
+gem "jbuilder"
 gem 'responders', '~> 2.0'
 gem "pg"
 gem "figaro"
@@ -26,7 +27,7 @@ gem 'pygmentize'
 gem 'redcarpet'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
-gem "react-rails"
+gem "react-rails", '1.8.2'
 gem 'react-bootstrap-rails'
 gem "lodash-rails"
 gem 'js-routes'
@@ -35,6 +36,7 @@ gem "jquery-slick-rails"
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
+gem 'json', '2.0.2'
 gem 'raygun4ruby'
 gem 'sitemap_generator'
 gem 'builder'
@@ -54,6 +56,7 @@ source "https://rails-assets.org" do
   gem 'rails-assets-pubsub-js'
   gem 'rails-assets-devicons'
   gem 'rails-assets-headroom.js'
+  gem 'rails-assets-scrollreveal'
 end
 
 group :development, :test do
