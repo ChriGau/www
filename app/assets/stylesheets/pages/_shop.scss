@@ -10,9 +10,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: asset-url('banners/shop-banner.jpg');
+    background-image: linear-gradient(rgba(255,255,255,1) 3%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,1) 90%), asset-url('banners/banner-shop.jpg');
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.6;
     z-index: 0;
   }
 
