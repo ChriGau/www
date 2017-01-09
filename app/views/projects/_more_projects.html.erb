@@ -3,10 +3,10 @@
     <% projects.each do |project| %>
       <% project = OpenStruct.new project %>
       <div class="project-card">
-        <a class='project-url' target='_blank' href=<%= project.url %>>
-          <div class="project-card-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
+        <%= link_to project.url, class: 'project-url', target: '_blank'  do %>
+          <div class="project-card-thumbnail" style="background: url(<%= project.card %>); background-size:cover;background-position:center center;">
           </div>
-        </a>
+        <% end %>
         <div class="project-card-details">
           <div class="project-makers">
             <% project.makers.each do |maker| %>
