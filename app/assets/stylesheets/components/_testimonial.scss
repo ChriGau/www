@@ -235,6 +235,15 @@
       padding: 0 40px;
       width: 50%;
 
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 0 20px;
+
+        &:not(:last-of-type) {
+          margin-bottom: 60px;
+        }
+      }
+
       .testimonial-body {
         position: relative;
         padding-left: 85px;
@@ -242,6 +251,10 @@
         min-height: 185px;
         background-color: white;
         border-radius: 8px;
+
+        @media (max-width: 767px) {
+          padding: 85px 28px 28px 28px;
+        }
 
         .alumni-picture {
           position: absolute;
@@ -254,6 +267,12 @@
           border: 3px solid white;
           box-shadow: 0 2px 26px 0 rgba(0,0,0,0.2);
           z-index: 15;
+
+          @media (max-width: 767px) {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+          }
         }
 
         .testimonial-content {

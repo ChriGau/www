@@ -131,6 +131,18 @@
             transition: all 0.3s ease-in-out;
             box-shadow: 0 1px 6px 0px rgba(0,0,0,0.2);
           }
+
+          .story-user-avatar {
+            @media (max-width: 420px) {
+              display: none;
+            }
+          }
+
+          .story-banner-infos {
+            @media (max-width: 420px) {
+              font-size: 12px;
+            }
+          }
         }
 
         .story-card-link {
