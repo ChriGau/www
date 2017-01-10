@@ -34,7 +34,7 @@
 
     @media (max-width: 624px) {
       padding: 0 20px;
-      margin-bottom: 60px;
+      //margin-bottom: 60px;
       text-align: center;
       font-size: 34px;
     }
@@ -52,9 +52,17 @@
     overflow: hidden;
     z-index: 10;
 
+    @media (max-width: 767px) {
+      border-radius: 0;
+    }
+
     // Slice by 2
     .stories-bundle {
       display: flex;
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
 
       &:nth-child(even) {
         .story-container {
@@ -79,6 +87,10 @@
         height: 330px;
         background-size: cover;
 
+        @media (max-width: 767px) {
+          background-position: right;
+        }
+
         main {
           position: relative;
           height: 100%;
@@ -87,11 +99,23 @@
 
         .story-card-title {
           color: white;
+
+          @media (max-width: 625px) {
+            font-size: 24px;
+          }
         }
 
         .story-card-summary {
           opacity: 0;
           transition: all 0.1s ease;
+
+          @media (max-width: 1200px) {
+            opacity: 0.8;
+          }
+
+          @media (max-width: 625px) {
+            opacity: 0;
+          }
         }
 
         .story-card-footer {
@@ -114,12 +138,64 @@
         }
 
         &:nth-child(odd) {
-          width: 34%;
-          background-image: none !important;
-          border-bottom: 2px solid rgba(106, 216, 106, 0.55);
+          width: 100%;
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.2) 45%);
+            z-index: 0;
+          }
+
+          @media (min-width: 1200px) {
+            width: 34%;
+            background-image: none !important;
+            border-bottom: 2px solid rgba(106, 216, 106, 0.55);
+
+            &:after {
+              display: none;
+            }
+          }
 
           .story-card-title {
-            color: #222;
+            width: 50%;
+
+            @media (min-width: 1200px) {
+              width: 100%;
+              color: #222;
+            }
+
+            @media (max-width: 625px) {
+              width: 70%;
+            }
+
+            @media (max-width: 420px) {
+              width: 100%;
+            }
+          }
+
+          .story-card-summary {
+            @media (max-width: 1200px) {
+              width: 50%;
+              color: white;
+              transition: all 0.3s ease;
+            }
+
+            @media (max-width: 625px) {
+              width: 100%;
+            }
+          }
+
+          .story-card-footer {
+            @media (max-width: 1200px) {
+              color: white;
+            }
           }
 
           &:hover {
@@ -136,7 +212,11 @@
 
         &:nth-child(even) {
           position: relative;
-          width: 67%;
+          width: 100%;
+
+          @media (min-width: 1200px) {
+            width: 67%;
+          }
 
           &:after {
             content: "";
@@ -164,12 +244,24 @@
 
           .story-card-title {
             width: 50%;
+
+            @media (max-width: 625px) {
+              width: 70%;
+            }
+
+            @media (max-width: 420px) {
+              width: 100%;
+            }
           }
 
           .story-card-summary {
             width: 50%;
             color: white;
             transition: all 0.3s ease;
+
+            @media (max-width: 625px) {
+              width: 100%;
+            }
           }
 
           .story-card-footer {
