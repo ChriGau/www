@@ -321,7 +321,7 @@ fr:
       only_ten_days: "...en 10 jours seulement"
       discover_our_stories: Success stories
       watch_demo_day_title_html: "Regardez le dernier Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
-      show_more_stories: Show more stories
+      show_more_stories: Plus de témoignages
   cities:
     show:
       title: "Formation Développeur Web à %{city} - Le Wagon"

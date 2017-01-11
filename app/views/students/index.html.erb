@@ -12,7 +12,7 @@
     <%= render 'more_stories', stories: @stories %>
   </div>
   <div id="paginator">
-    <%= link_to_next_page @stories, 'Show more stories', remote: true, param_name: :story_page,id: 'load_more_stories', class: 'more-stories' %>
+    <%= link_to_next_page @stories, t(".show_more_stories"), remote: true, param_name: :story_page,id: 'load_more_stories', class: 'more-stories' %>
   </div>
 </div>
 

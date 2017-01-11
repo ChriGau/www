@@ -11,6 +11,6 @@
     <%= render 'more_projects', projects: @projects %>
   </div>
   <div id="paginator_projects">
-    <%= link_to_next_page @projects, 'Show more projects', remote: true, param_name: :project_page,id: 'load_more_projects', class: 'more-projects' %>
+    <%= link_to_next_page @projects, t(".show_more_projects"), remote: true, param_name: :project_page,id: 'load_more_projects', class: 'more-projects' %>
   </div>
 </div>
