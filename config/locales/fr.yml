@@ -280,6 +280,9 @@ fr:
       live_go_to_meetup: "Voir tous nos Meetups"
     live_player_video:
       live_coming_soon: "Live en préparation..."
+    shop:
+      title: "La boutique du Wagon"
+      description: "Le nouveau chic - Paris"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
@@ -302,6 +305,11 @@ fr:
       batch_title: " super héros"
   students:
     index:
+      meta_title: Les Alumni du Wagon
+      meta_description_html: |
+        %{count}+ élèves partageant les mêmes skills & la même passion
+      apply_for_nine_weeks_html: Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>
+      meta_description:
       title: Projets de nos élèves - Produits Made in Le Wagon
       description: |
         Découvrez les projets des précédents batches du Wagon. Plus de 400 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
@@ -384,6 +392,9 @@ fr:
       description: "%{story}"
   projects:
     index:
+      meta_title_html: |
+        Découvrez plus de %{count}+ projets
+      meta_description: réalisés par nos alumni en 10 jours
       projects_details_html: |
         <strong>Découvrez plus de %{count}+ products</strong><small>réalisés par nos alumni en 10 jours</small>
       show_more_projects: Voir plus de projets

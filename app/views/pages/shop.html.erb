@@ -1,5 +1,8 @@
+<%= content_for(:title)       { (t ".title").html_safe }       %>
+<%= content_for(:description) { t ".description" } %>
+<%= content_for(:image_url) { image_url 'social/shop_card.png' } %>
 
-<h1>Le Wagon's shop<small>Because coders got style</small></h1>
+<h1><%= t('.title')%><small><%= t('.description')%></small></h1>
 
 <div class="container">
   <div id="myShop"><a href="//shop.spreadshirt.fr/lewagon">lewagon</a></div>

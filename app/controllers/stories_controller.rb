@@ -1,6 +1,6 @@
 class StoriesController < ApplicationController
   def show
-    @story = story.story(params[:id])
+    @story = @client.story(params[:id])
     session[:story_ids] = [] if session[:story_ids].nil?
     session[:story_ids] << @story['id']
     session[:story_ids].uniq!

@@ -293,6 +293,9 @@ pt-BR:
       live_go_to_meetup: "Veja nossos eventos Meetup"
     live_player_video:
       live_coming_soon: "Em breve..."
+    shop:
+      title: "Le Wagon's shop"
+      description: "Because coders got style"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
@@ -315,6 +318,9 @@ pt-BR:
       batch_title: " membros da turma"
   students:
     index:
+      meta_title: "Le Wagon's Alumni"
+      meta_description_html: |
+        %{count}+ talented students sharing the same skills & passion
       title: Os projetos de nossos alunos - Startups e aplicativos web made in Le Wagon
       description: |
         Descubra os projetos das promoções anteriores do Le Wagon. Mais de 400 empreendedores já conquistaram super-poderes, e você ?
@@ -394,6 +400,10 @@ pt-BR:
       description: "%{story}"
   projects:
     index:
+      meta_title_html: |
+        Browse among %{count}+ projects
+      meta_description:
+        built by our alumni in 2 weeks
       projects_details_html: |
         <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
       show_more_projects: Show more projects
