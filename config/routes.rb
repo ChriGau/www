@@ -77,6 +77,7 @@ Rails.application.routes.draw do
     get "blog/:slug", to: 'posts#show', as: :post
     get "live", to: 'pages#live', as: :live
     get "shop" => "pages#shop", as: :shop
+    get "enterprise" => "pages#enterprise", as: :enterprise
 
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city

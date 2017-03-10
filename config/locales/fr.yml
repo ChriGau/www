@@ -283,6 +283,25 @@ fr:
     shop:
       title: "La boutique du Wagon"
       description: "Le nouveau chic - Paris"
+    enterprise:
+      title_html: |
+        Boostez vos équipes et<br>gagnez en agilité
+      catchline_html: |
+        Apprenez à coder et faites la différence<br>dans un monde en profondes mutations
+      cta: "Discutons"
+      features: "Des formations adaptées à vos enjeux actuels"
+      tite_feature_1: ""
+      description_feature_1: ""
+      tite_feature_2: ""
+      description_feature_2: ""
+      tite_feature_3: ""
+      description_feature_3: ""
+      tite_feature_4: ""
+      description_feature_4: ""
+      tite_feature_5: ""
+      description_feature_5: ""
+      tite_feature_6: ""
+      description_feature_6: ""
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"

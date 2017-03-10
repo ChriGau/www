@@ -290,6 +290,25 @@ en:
     shop:
       title: "Le Wagon's shop"
       description: "Because coders got style"
+    enterprise:
+      title_html: |
+        Boostez vos équipes et<br><strong>gagnez en agilité</strong>
+      catchline_html: |
+        Apprenez à coder et faites la différence<br>dans un monde en profondes mutations
+      cta: "Parlons-en"
+      features: "Des formations adaptées à vos enjeux actuels"
+      tite_feature_1: "Innovez"
+      description_feature_1: "Vous avez besoin d’innover, pour attirer des jeunes profils "
+      tite_feature_2: "Communiquez"
+      description_feature_2: "Vous voulez améliorer la qualité des échanges entre les équipes techniques et les chef de projet"
+      tite_feature_3: "Accélerez"
+      description_feature_3: "Vous voulez  réduire le time to market grace à au méthodologie de lancement d’un MVP"
+      tite_feature_4: "Innovez"
+      description_feature_4: "Vous avez besoin d’innover, pour attirer des jeunes profils "
+      tite_feature_5: "Innovez"
+      description_feature_5: "Vous avez besoin d’innover, pour attirer des jeunes profils "
+      tite_feature_6: "Innovez"
+      description_feature_6: "Vous avez besoin d’innover, pour attirer des jeunes profils "
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"

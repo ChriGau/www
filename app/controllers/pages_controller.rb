@@ -41,6 +41,9 @@ class PagesController < ApplicationController
   def employers
   end
 
+  def enterprise
+  end
+
   def stack
   end
 

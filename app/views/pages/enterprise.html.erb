@@ -1,0 +1,174 @@
+<div class="banner-container">
+  <div class="container">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/b2b_2.jpg')%>');">
+      <div class="banner-gradient-shadow"></div>
+      <div class="banner-content">
+        <h1 class='glitch'>
+          <%= t(".title_html") %>
+        </h1>
+        <p>
+          <%= t(".catchline_html") %>
+        </p>
+      </div>
+    </div>
+    <div class='banner-cta'>
+    <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'btn banner-cta-item btn-danger btn-lg' do %>
+      <%= t(".cta", default: "Discutons") %>
+    <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="features-wrapper up">
+  <div class="container features-container">
+    <h2 class='section-title-home'>
+      <div class='section-title-home-content' style="font-size:30px;">
+        <%= t(".features") %>
+      </div>
+    </h2>
+    <div class='features'>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon yellow'>
+            <i class='mdi mdi-laptop'></i>
+          </div>
+          <h2 class='feature-title'>
+            <%= t(".tite_feature_1") %>
+          </h2>
+        </div>
+        <div class='feature-body'>
+          <%= t(".description_feature_1") %>
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon purple'>
+            <i class='mdi mdi-keyboard-variant'></i>
+          </div>
+          <h2 class='feature-title'>
+            <%= t(".tite_feature_2") %>
+          </h2>
+        </div>
+        <div class='feature-body'>
+          <%= t(".description_feature_2") %>
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon green'>
+          <i class='mdi mdi-source-pull'></i>
+          </div>
+          <h2 class='feature-title'>
+            <%= t(".tite_feature_3") %>
+          </h2>
+        </div>
+        <div class='feature-body'>
+          <%= t(".description_feature_3") %>
+        </div>
+      </div>
+       <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon orange'>
+            <i class='mdi mdi-auto-fix'></i>
+          </div>
+          <h2 class='feature-title'>
+            <%= t(".tite_feature_4") %>
+          </h2>
+        </div>
+        <div class='feature-body'>
+          <%= t(".description_feature_4") %>
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon blue'>
+            <i class='mdi mdi-cube-outline'></i>
+          </div>
+          <h2 class='feature-title'>
+            <%= t(".tite_feature_5") %>
+          </h2>
+        </div>
+        <div class='feature-body'>
+          <%= t(".description_feature_5") %>
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon red'>
+            <i class='mdi mdi-wallet-travel'></i>
+          </div>
+          <h2 class='feature-title'>
+            <%= t(".tite_feature_6") %>
+          </h2>
+        </div>
+        <div class='feature-body'>
+          <%= t(".description_feature_6") %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="testimonial-card">
+        <div class="testimonial-body">
+          <%= image_tag "test.jpg" %>
+          <div class='testimonial-content'>
+            Lorem ipsum dolor
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-user-name">
+              Janine du Port
+            </div>
+            <div class='testimonial-user-batch'>
+              La maison des sardines
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="testimonial-card">
+        <div class="testimonial-body">
+          <%= image_tag "test.jpg" %>
+          <div class='testimonial-content'>
+            Lorem ipsum dolor
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-user-name">
+              Janine du Port
+            </div>
+            <div class='testimonial-user-batch'>
+              La maison des sardines
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="video-container">
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0HjKQ8aNS7g" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class='section-title-home'>
+    Echangez avec nous
+  </h2>
+
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-8">
+      <form class="">
+      </form>
+    </div>
+  </div>
+</div>
