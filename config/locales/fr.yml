@@ -300,6 +300,7 @@ fr:
       description_feature_5: ""
       tite_feature_6: ""
       description_feature_6: ""
+      cta_usecase: Découvrez nos formations
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"

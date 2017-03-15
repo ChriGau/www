@@ -18,6 +18,7 @@
 
 
   <div class="container enterprise-container">
+    <div class="circle"></div>
     <ul class="usecases">
       <li class="usecase">Vous avez besoin de recruter des profils techniques</li>
       <li class="usecase">Vous souhaitez freiner le turnover de vos collaborateurs</li>
@@ -29,15 +30,24 @@
           <li>Vous voulez réduire le time to market grace à au méthodologie de lancement d’un MVP</li>
         </ul>
     </ul>
+    <div class='banner-cta'>
+      <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'btn banner-cta-item btn-danger btn-lg' do %>
+        <%= t(".cta_usecase") %>
+      <% end %>
+    </div>
   </div>
 
   <div class="container film-container">
-    <h2 class='section-title-home'>
-      Après une journée au Wagon
-    </h2>
-    <div class="video-container">
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0HjKQ8aNS7g" frameborder="0" allowfullscreen></iframe>
+    <div class="row">
+      <div class="col-md-9">
+        <div class="video-container">
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0HjKQ8aNS7g" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3">
+         <h2 class='section-title-home'>Après une journée au Wagon</h2>
       </div>
     </div>
   </div>

@@ -307,6 +307,7 @@ en:
       description_feature_5: "Vous avez besoin d’innover, pour attirer des jeunes profils "
       tite_feature_6: "Innovez"
       description_feature_6: "Vous avez besoin d’innover, pour attirer des jeunes profils "
+      cta_usecase: Découvrez nos formations
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
