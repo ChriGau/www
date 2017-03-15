@@ -291,10 +291,8 @@ en:
       title: "Le Wagon's shop"
       description: "Because coders got style"
     enterprise:
-      title_html: |
-        Boostez vos équipes et<br><strong>gagnez en agilité</strong>
-      catchline_html: |
-        Apprenez à coder et faites la différence<br>dans un monde en profondes mutations
+      title: Boostez vos équipes et gagnez en agilité
+      catchline: Apprenez à coder et faites la différence dans un monde en profondes mutations
       cta: "Parlons-en"
       features: "Des formations adaptées à vos enjeux actuels"
       tite_feature_1: "Innovez"
