@@ -308,6 +308,7 @@ en:
       tite_feature_6: "Innovez"
       description_feature_6: "Vous avez besoin d’innover, pour attirer des jeunes profils "
       cta_usecase: Découvrez nos formations
+      cta_end: Échangez avec Benjamin !
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"

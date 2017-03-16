@@ -177,20 +177,118 @@
     }
   }
 
-  .film-container {
-    margin-top: 120px;
-    background-image: asset-url('banners/pattern-enterprise.png');
+  .film-section {
+    position: relative;
+    padding: 60px 0;
+    margin-top: 60px;
 
-    .col-md-9 {
-      padding: 0;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 675px;
+      top: -85px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #f4f4f4;
+      z-index: 0;
     }
 
-    .video-container {
-      margin:0;
-      max-width: 100%;
+    .film-container {
+      display: flex;
 
-      .video-wrapper {
+      .video-container {
         margin:0;
+        width: 100%;
+        max-width: 100%;
+
+        .video-wrapper {
+          margin:0;
+          border: none;
+        }
+      }
+
+      .video-caption {
+        width: 30%;
+        margin: 0;
+        font-weight: 500;
+        font-size: 1.8em;
+        line-height: 1.2em;
+        border-left: none;
+        background-color: #333;
+        color: white;
+      }
+    }
+  }
+
+  .sales-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 60px auto 120px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 100px;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #f4f4f4;
+      z-index: 0;
+    }
+
+    .sales-team {
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .banner-cta {
+      margin-top: 55px;
+      z-index: 1;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      i {
+        position: relative;
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.2em;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 28px;
+          height: 2px;
+          background-color: #f4f4f4;
+          top: 13px;
+          left: -40px;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 28px;
+          height: 2px;
+          background-color: #f4f4f4;
+          top: 13px;
+          right: -40px;
+        }
+      }
+
+      a, a:hover, a:focus, a:visited {
+        font-size: 1.2em;
+        margin: 5px 0;
+        text-decoration: none;
       }
     }
   }

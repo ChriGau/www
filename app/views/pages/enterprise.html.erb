@@ -11,7 +11,7 @@
   </h1>
 
   <div class='banner-cta'>
-    <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'btn banner-cta-item btn-danger btn-lg' do %>
+    <%= link_to 'https://lewagon.typeform.com/to/LOs0uR', target: '_blank', class: 'btn banner-cta-item btn-danger btn-lg' do %>
       <%= t(".cta", default: "Discutons") %>
     <% end %>
   </div>
@@ -31,38 +31,37 @@
         </ul>
     </ul>
     <div class='banner-cta'>
-      <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'btn banner-cta-item btn-danger btn-lg' do %>
+      <%= link_to 'https://lewagon.typeform.com/to/LOs0uR', target: '_blank', class: 'btn banner-cta-item btn-danger btn-lg' do %>
         <%= t(".cta_usecase") %>
       <% end %>
     </div>
   </div>
 
-  <div class="container film-container">
-    <div class="row">
-      <div class="col-md-9">
-        <div class="video-container">
-          <div class="video-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0HjKQ8aNS7g" frameborder="0" allowfullscreen></iframe>
-          </div>
+  <div class="fluid-container film-section">
+    <div class="container film-container">
+      <div class="video-container">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0HjKQ8aNS7g" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
-       <div class="col-md-3">
-         <h2 class='section-title-home'>Après une journée au Wagon</h2>
-      </div>
+      <blockquote class='video-caption'>
+        <p>Learning to code today is like learning to read, without it the future will be close.</p>
+        <footer><cite>Bronwen Valve</cite></footer>
+      </blockquote>
     </div>
   </div>
 
 
-  <div class="container">
+  <div class="container sales-contact">
+    <%= image_tag 'hero/benjamin.jpg', class: 'sales-team' %>
     <div class='banner-cta'>
-      <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'btn banner-cta-item btn-danger btn-lg' do %>
-        <%= t(".cta", default: "Discutons") %>
+      <%= link_to 'https://lewagon.typeform.com/to/LOs0uR', target: '_blank', class: 'btn banner-cta-item btn-danger btn-lg' do %>
+        <%= t(".cta_end") %>
       <% end %>
     </div>
-
-    <span>or</span>
-
-    Tet : +336 79 78 88 98
-    Email: contact@lewagon.com
+    <div class="contact-details">
+      <i>ou</i>
+      <a href="tel:0033679788898">+33 (0)6 79 78 88 98</a>
+      <a href="mailto:contact@lewagon.com?Subject=Contact%20B2B">contact@lewagon.com</a>
   </div>
 </div>
