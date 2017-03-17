@@ -296,6 +296,22 @@ pt-BR:
     shop:
       title: "Le Wagon's shop"
       description: "Porque coders tem estilo :)"
+    enterprise:
+      title: "Boost you team and gain agility"
+      catchline: "Learn to code and make the difference in a world in constant change"
+      cta_banner: "I want to know more"
+      usecase_1: "Need to recruit technical profiles?"
+      usecase_2: "You want to keep your most promising employees?"
+      usecase_3: "You want to improve the quality of the exchanges between the technical teams and the project managers?"
+      usecase_4: "You want to transform your project managers into product owners?"
+      usecase_5: "You need to innovate, to attract young profiles?"
+      usecase_6: "You want to reduce the time to market by learning how to launch an MVP?"
+      cta_usecases: Learn about our trainings
+      quote_content: "Learning to code today is like learning to read, without it the future will be close."
+      quote_author: "Bronwen Valve"
+      cta_contact: "Contact Benjamin"
+      phone_number: "+33 (0)7 83 59 97 95"
+      mail_adress: "benjamin@lewagon.com"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
