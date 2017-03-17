@@ -284,19 +284,10 @@ fr:
       title: "La boutique du Wagon"
       description: "Le nouveau chic - Paris"
     enterprise:
-      title: "Boostez vos équipes et gagnez en agilité"
-      catchline: "Apprenez à coder et faites la différence dans un monde en profondes mutations"
-      cta_banner: "Discutons-en !"
-      usecase_1: "Vous avez besoin de recruter des profils techniques"
-      usecase_2: "Vous souhaitez freiner le turnover de vos collaborateurs"
-      usecase_3: "Vous voulez améliorer la qualité des échanges entre les équipes techniques et les chefs de projet"
-      usecase_4: "Vous voulez faire de vos chefs de projet des “product owner"
-      usecase_5: "Vous avez besoin d’innover, pour attirer des jeunes profils"
-      usecase_6: "Vous voulez réduire le time to market grace aux méthodologie de lancement d’un MVP"
-      cta_usecases: Découvrez nos formations
-      quote_content: "Learning to code today is like learning to read, without it the future will be close."
-      quote_author: "Bronwen Valve"
-      cta_contact: "Échangez avec Benjamin !"
+      title: "Boost you team and gain agility"
+      catchline: "Learn to code and make the difference in a world in constant change"
+      cta_banner: "Let's talk"
+      cta_contact: "Contact Benjamin"
       phone_number: "+33 (0)7 83 59 97 95"
       mail_adress: "benjamin@lewagon.com"
   demoday:
