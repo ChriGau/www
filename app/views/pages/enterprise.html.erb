@@ -1,6 +1,6 @@
 <%= content_for(:title)       { (t ".title").html_safe }       %>
 <%= content_for(:description) { t ".catchline" } %>
-<%= content_for(:image_url) { image_url 'social/alumni_card.png' } %>
+<%= content_for(:image_url) { image_url 'social/enterprise_card.png' } %>
 
 
 <div id="enterprise">
@@ -10,9 +10,9 @@
     <small><%= t(".catchline") %></small>
   </h1>
 
-  <div class='banner-cta'>
+  <div class='banner-cta cta-header'>
     <%= link_to 'https://lewagon.typeform.com/to/LOs0uR', target: '_blank', class: 'btn banner-cta-item btn-danger btn-lg' do %>
-      <%= t(".cta", default: "Discutons") %>
+      <%= t(".cta_banner") %>
     <% end %>
   </div>
 
@@ -20,19 +20,19 @@
   <div class="container enterprise-container">
     <div class="circle"></div>
     <ul class="usecases">
-      <li class="usecase">Vous avez besoin de recruter des profils techniques</li>
-      <li class="usecase">Vous souhaitez freiner le turnover de vos collaborateurs</li>
-      <li class="usecase">Vous voulez améliorer la qualité des échanges entre les équipes techniques et les chef de projet</li>
+      <li class="usecase"><%= t(".usecase_1") %></li>
+      <li class="usecase"><%= t(".usecase_2") %></li>
+      <li class="usecase"><%= t(".usecase_3") %></li>
       <li class="usecase">
         <ul>
-          <li>Vous voulez faire de vos chefs de projet des “product owner"</li>
-          <li>Vous avez besoin d’innover, pour attirer des jeunes profils</li>
-          <li>Vous voulez réduire le time to market grace à au méthodologie de lancement d’un MVP</li>
+          <li><%= t(".usecase_4") %></li>
+          <li><%= t(".usecase_5") %></li>
+          <li><%= t(".usecase_6") %></li>
         </ul>
     </ul>
     <div class='banner-cta'>
       <%= link_to 'https://lewagon.typeform.com/to/LOs0uR', target: '_blank', class: 'btn banner-cta-item btn-danger btn-lg' do %>
-        <%= t(".cta_usecase") %>
+        <%= t(".cta_usecases") %>
       <% end %>
     </div>
   </div>
@@ -45,8 +45,8 @@
         </div>
       </div>
       <blockquote class='video-caption'>
-        <p>Learning to code today is like learning to read, without it the future will be close.</p>
-        <footer><cite>Bronwen Valve</cite></footer>
+        <p><%= t(".quote_content") %></p>
+        <footer><cite><%= t(".quote_author") %></cite></footer>
       </blockquote>
     </div>
   </div>
@@ -56,12 +56,12 @@
     <%= image_tag 'hero/benjamin.jpg', class: 'sales-team' %>
     <div class='banner-cta'>
       <%= link_to 'https://lewagon.typeform.com/to/LOs0uR', target: '_blank', class: 'btn banner-cta-item btn-danger btn-lg' do %>
-        <%= t(".cta_end") %>
+        <%= t(".cta_contact") %>
       <% end %>
     </div>
     <div class="contact-details">
       <i>ou</i>
-      <a href="tel:0033679788898">+33 (0)6 79 78 88 98</a>
-      <a href="mailto:contact@lewagon.com?Subject=Contact%20B2B">contact@lewagon.com</a>
+      <a href="tel:<%= t(".phone_number").gsub(' ', '') %>"><%= t(".phone_number") %></a>
+      <a href="mailto:<%= t(".mail_adress") %>?Subject=Contact%20B2B"><%= t(".mail_adress") %></a>
   </div>
 </div>
